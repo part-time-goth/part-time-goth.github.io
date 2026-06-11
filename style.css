@@ -1,59 +1,98 @@
 body {
-  background: white;
-  color: black;
-  font-family: Verdana;
+  background-image: url('assets/images/paper-texture.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #161414;
+  font-family: serif;
 }
 
 p {
-  line-height: 1;
-  font-size: 14px;
+  font-size: 1.25em;
+  margin: 0.25em;
+}
+
+h1 {
+  font-size: 1.25em;
+  font-weight: normal;
+  margin: 0.25em;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.25em;
+  font-weight: normal;
+  font-style: italic;
+  margin: 0.25em;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.25em;
+  font-weight: normal;
+}
+
+h4 {
+  font-size: 1.25em;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.bibliography {
+  font-size: 1.25em;
+  text-indent: -2.5em;
+  padding-left: 2.5em;
+  line-height: 2;
 }
 
 li {
-  list-style-type: none;
   margin: 0;
-  padding: 1% 10%;
+  padding: 1%;
+  font-size: 1.25em;
+  /* commenting this out till I get a neww cursor image
+  list-style-type: none;
   background-image: url('images/cursor-bullet.png');
   background-repeat: no-repeat;
   background-position: left center;
   background-size: 8%;
+  */
 }
 
 /* link styling */
 a:link, a:visited {
-  color: black;
+  color: #3c8eac;
   text-decoration: none;
 }
 
 a:hover, a:active {
-  background-color: black;
-  color: white;
+  background-color: #3c8eac;
+  color: #efead1;
   text-decoration: none;
 }
 
 /*link styling for images */
-a.image:hover {background-color: white;}
+a.image:hover {background-color: #efead1;}
 
 /* reversed colors link styling */
 a.reverse:link {
-  color: white;
+  color: efead1;
   text-decoration: none;
 }
 
 a.reverse:visited {
-  color: white;
+  color: efead1;
   text-decoration: none;
 }
 
 a.reverse:hover, a.reverse:active {
-  background-color: white;
-  color: black;
+  background-color: efead1;
+  color: #161414;
   text-decoration: none;
 }
 
-.hanging-indent {
-  padding-left: 10px;
-  text-indent: -10px;
+/* custom fonts */
+@font-face {
+  font-family: Fenwick Woodtype;
+  src: url('assets/fonts/FenwickWoodtype/FenwickWoodtype.ttf');
 }
 
 /* website sections made with flex-boxes */
@@ -65,6 +104,18 @@ a.reverse:hover, a.reverse:active {
   align-items: flex-start;
 }
 
+/* section that takes up the entire page */
+.sub-section {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
+  outline: 5px groove #ec9738;
+  background-color: #efead1;
+}
+
 /* section on the left */
 .sub-small {
   display: flex;
@@ -73,70 +124,42 @@ a.reverse:hover, a.reverse:active {
   width: 25%;
 }
 
-.sub-small-two {
-  flex-direction: row;
-  flex-wrap: wrap;
-  display: flex;
-  align-self: flex-start;
-  width: 25%;
-}
-
 /* about me and links pop-ups */
 .small-container {
-  align-items: flex-end;
-  flex-wrap: wrap;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  padding: 0 5px 5px;
-  line-height: 0.5;
-  text-indent: 5px;
-  background: rgb(90,166,207);
-  background: linear-gradient(90deg, rgba(90,166,207,1) 0%, rgba(30,131,194,1) 75%, rgba(90,166,207,1) 100%);
-  color: white;
-}
-
-.smaller-container {
-  flex-wrap: wrap;
-  padding: 1px 5px;
-  outline: 1px solid black;
-  background: white;
-  color: black;
-  text-indent: 0;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: fit-content;
+  padding: 10px;
+  margin: 10px;
+  outline: 5px groove #ec9738;
+  background-color: #efead1;
 }
 
 /* section on the right */
 .sub-larger {
   display: flex;
   flex-direction: column;
-  padding: 0;
-  padding-right: 10px;
+  padding: 10px;
+  padding-right: 20px;
   width: 75%;
 }
 
-/* art pop-ups */
 .sub-large {
   display: flex;
   flex-direction: column;
   align-self: flex-start;
   width: 100%;
   margin-bottom: 10px;
-  padding: 0 5px 5px;
-  background: rgb(90,166,207);
-  background: linear-gradient(90deg, rgba(90,166,207,1) 0%, rgba(30,131,194,1) 75%, rgba(90,166,207,1) 100%);
-  color: white;
-}
-
-/* art section */
-.medium-container {
-  background: white;
-  color: black;
-  outline: 1px solid black;
+  padding: 5px;
+  outline: 5px groove #ec9738;
+  background-color: #efead1;
 }
 
 /* adjusting for mobile */
 @media (max-width: 800px) {
   p {
-    font-size: 12px;
+    font-size: 1em;
   }
   
   .large-container {
