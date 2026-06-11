@@ -46,14 +46,14 @@ h4 {
 
 li {
   margin: 0;
-  padding: 1%;
+  margin-left: -2em;
+  padding: 1% 15%;
   font-size: 1.25em;
-  /* commenting this out till I get a neww cursor image
   list-style-type: none;
-  background-image: url('images/cursor-bullet.png');
+  background-image: url('assets/images/pointer.png');
   background-repeat: no-repeat;
-  background-position: left center;
-  background-size: 8%;
+  background-position: left bottom;
+  background-size: 10%;
   */
 }
 
