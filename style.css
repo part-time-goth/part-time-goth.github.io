@@ -2,7 +2,7 @@ body {
   background-image: url('assets/images/paper-texture.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  color: #161414;
+  color: #efead1;
   font-family: serif;
 }
 
@@ -64,27 +64,24 @@ a:link, a:visited {
 
 a:hover, a:active {
   background-color: #3c8eac;
-  color: #efead1;
+  color: #161414;
   text-decoration: none;
 }
 
-/*link styling for images */
-a.image:hover {background-color: #efead1;}
-
 /* reversed colors link styling */
 a.reverse:link {
-  color: efead1;
+  color: #161414;
   text-decoration: none;
 }
 
 a.reverse:visited {
-  color: efead1;
+  color: #161414;
   text-decoration: none;
 }
 
 a.reverse:hover, a.reverse:active {
-  background-color: efead1;
-  color: #161414;
+  background-color: #161414;
+  color: #efead1;
   text-decoration: none;
 }
 
@@ -112,7 +109,7 @@ a.reverse:hover, a.reverse:active {
   padding: 10px;
   margin: 10px;
   outline: 5px groove #ec9738;
-  background-color: #efead1;
+  background-color: #161414;
 }
 
 /* section on the left */
@@ -132,7 +129,7 @@ a.reverse:hover, a.reverse:active {
   padding: 10px;
   margin: 10px;
   outline: 5px groove #ec9738;
-  background-color: #efead1;
+  background-color: #161414;
 }
 
 /* section on the right */
@@ -152,7 +149,7 @@ a.reverse:hover, a.reverse:active {
   margin-bottom: 10px;
   padding: 5px;
   outline: 5px groove #ec9738;
-  background-color: #efead1;
+  background-color: #161414;
 }
 
 /* adjusting for mobile */
