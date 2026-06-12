@@ -52,7 +52,7 @@ li {
   list-style-type: none;
   background-image: url('assets/images/pointer.png');
   background-repeat: no-repeat;
-  background-position: left bottom;
+  background-position: left center;
   background-size: 10%;
 }
 
